@@ -1,101 +1,88 @@
-import Image from "next/image";
+"use client";
+
+import { Bot, MessageSquare, Zap } from "lucide-react"
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import Image from "next/image"
+
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const features = [
+    {
+      icon: MessageSquare,
+      title: "Anlık Cevaplar",
+      description: "Sorularınıza anında, doğru ve detaylı cevaplar alın.",
+      href: "#instant-answers"
+    },
+    {
+      icon: Zap,
+      title: "Hızlı ve Verimli",
+      description: "Zaman kazanın, daha verimli çalışın.",
+      href: "#fast-efficient"
+    },
+    {
+      icon: Bot,
+      title: "Kişiselleştirilmiş Deneyim",
+      description: "Size özel öneriler ve çözümler sunuyoruz.",
+      href: "#personalized-experience"
+    },
+  ]
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  return (
+    <main className="relative min-h-screen z-10 py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+      <BackgroundBeams />
+      <section className="relative py-20 overflow-hidden">
+        <div className="container mx-auto text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
+              Marmara Üniversitesi'nin Yapay Zeka Asistanı
+            </h2>
+            <TextGenerateEffect words="MarunGPT ile üniversite hayatınızı kolaylaştırın!" className="text-xl mb-8 tracking-tight" />
+          </motion.div>
+          <Button className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+            Hemen Deneyin
+          </Button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section id="features" className="py-20">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-white">Özellikler</h2>
+          <HoverEffect items={features.map(feature => ({
+            title: feature.title,
+            description: feature.description,
+            icon: <feature.icon className="h-8 w-8 text-blue-400" />,
+            link: feature.href
+          }))} />
+        </div>
+      </section>
+      <section className="relative py-20">
+        <div className="container mx-auto">
+          <div className="relative w-full">
+            <AspectRatio ratio={16 / 9} className="relative overflow-hidden rounded-md">
+              <Image
+                src="/fef-bina.png"
+                alt="Image"
+                layout="fill"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/60 flex flex-col items-center justify-center rounded-md text-center text-white">
+                <p className="text-2xl font-bold mb-4">Anında cevaplar. Daha fazla üretkenlik. Sonsuz ilham.</p>
+                <Button className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                  Şimdi Deneyin
+                </Button>
+              </div>
+            </AspectRatio>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
