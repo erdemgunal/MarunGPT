@@ -11,6 +11,7 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
     animate("span", {
       opacity: 1,
@@ -19,7 +20,7 @@ export const TextGenerateEffect = ({
       duration: duration ? duration : 1,
       delay: stagger(0.2),
     });
-  }, [scope.current]);
+  }, [animate, filter, duration]); // Bağımlılıklar dizisine animate, filter, ve duration ekledik
 
   const renderWords = () => {
     return (
