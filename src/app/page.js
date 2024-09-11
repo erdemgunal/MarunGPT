@@ -43,7 +43,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
-              Marmara Üniversitesi'nin Yapay Zeka Asistanı
+              Marmara Üniversitesi&apos;nin Yapay Zeka Asistanı
             </h2>
             <TextGenerateEffect words="MarunGPT ile üniversite hayatınızı kolaylaştırın!" className="text-xl mb-8 tracking-tight" />
           </motion.div>
