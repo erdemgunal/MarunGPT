@@ -16,19 +16,19 @@ export default function Home() {
       icon: MessageSquare,
       title: "Anlık Cevaplar",
       description: "Sorularınıza anında, doğru ve detaylı cevaplar alın.",
-      href: "#instant-answers"
+      href: ""
     },
     {
       icon: Zap,
       title: "Hızlı ve Verimli",
       description: "Zaman kazanın, daha verimli çalışın.",
-      href: "#fast-efficient"
+      href: ""
     },
     {
       icon: Bot,
       title: "Kişiselleştirilmiş Deneyim",
       description: "Size özel öneriler ve çözümler sunuyoruz.",
-      href: "#personalized-experience"
+      href: ""
     },
   ]
 
