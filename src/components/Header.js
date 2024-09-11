@@ -1,10 +1,43 @@
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from "@/components/ui/button";
+import { motion, useAnimation } from 'framer-motion';
 
 export default function Header() {
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+                // Scroll down
+                controls.start({ y: '-100%' });
+            } else {
+                // Scroll up
+                controls.start({ y: '0%' });
+            }
+
+            setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollTop, controls]);
+
     return (
-        <header className="p-4 z-10 relative">
+        <motion.header
+            className="fixed top-0 left-0 right-0 p-4 z-50"
+            initial={{ y: '0%' }}
+            animate={controls}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        >
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex-shrink-0">
                     <Link href="/" passHref>
@@ -32,6 +65,6 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
-        </header>
+        </motion.header>
     );
 }

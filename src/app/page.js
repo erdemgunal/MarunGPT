@@ -70,11 +70,11 @@ export default function Home() {
               <Image
                 src="/fef-bina.png"
                 alt="Image"
-                layout="fill"
+                  layout="fill"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/60 flex flex-col items-center justify-center rounded-md text-center text-white">
-                <p className="text-2xl font-bold mb-4">Anında cevaplar. Daha fazla üretkenlik. Sonsuz ilham.</p>
+                <p className="text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-4">Anında cevaplar. Daha fazla üretkenlik. Sonsuz ilham.</p>
                 <Button href="#signup" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
                   Şimdi Deneyin
                 </Button>
