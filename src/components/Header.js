@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
@@ -6,13 +7,15 @@ export default function Header() {
         <header className="p-4 z-10 relative">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex-shrink-0">
-                    <Image
-                        src="/marungpt-logo-trans.png"
-                        alt="MarunGPT Logo"
-                        width={256}
-                        height={256}
-                        className="w-16 h-16"
-                    />
+                    <Link href="/" passHref>
+                        <Image
+                            src="/marungpt-logo-trans.png"
+                            alt="MarunGPT Logo"
+                            width={256}
+                            height={256}
+                            className="w-16 h-16"
+                        />
+                    </Link>
                 </div>
                 <nav>
                     <ul className="flex space-x-4">

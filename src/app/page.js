@@ -47,7 +47,7 @@ export default function Home() {
             </h2>
             <TextGenerateEffect words="MarunGPT ile üniversite hayatınızı kolaylaştırın!" className="text-xl mb-8 tracking-tight" />
           </motion.div>
-          <Button className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+          <Button href="#signup" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
             Hemen Deneyin
           </Button>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/60 flex flex-col items-center justify-center rounded-md text-center text-white">
                 <p className="text-2xl font-bold mb-4">Anında cevaplar. Daha fazla üretkenlik. Sonsuz ilham.</p>
-                <Button className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                <Button href="#signup" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
                   Şimdi Deneyin
                 </Button>
               </div>
