@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={cn('relative h-full font-sans antialiased', geistMono)}
       >
-        <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflow-hidden">
+        <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflox-x-hidden">
           <Header />
             {children}
           <Footer />
