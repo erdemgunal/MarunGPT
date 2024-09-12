@@ -77,7 +77,6 @@ export default function BlogPage() {
           <HoverEffect items={featuredPosts.map(post => ({
             title: post.title,
             description: post.description,
-            link: post.link
           }))} />
         </section>
 
