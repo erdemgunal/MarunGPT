@@ -54,3 +54,4 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/erdemmgunal/MarunGPT.git
    cd MarunGPT
+   hello world
