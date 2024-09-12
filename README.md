@@ -6,7 +6,7 @@ MarunGPT is an AI-powered chatbot developed to assist students at Marmara Univer
 
 ### **Frontend**
 - **Framework:** [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) for animations
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/), [Shadcn/UI](https://ui.shadcn.com/) for animations
 - **State Management:** React Context API (or Redux, if necessary)
 - **Deployment:** [Vercel](https://vercel.com/)
 
@@ -54,4 +54,3 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/erdemmgunal/MarunGPT.git
    cd MarunGPT
-   hello world
