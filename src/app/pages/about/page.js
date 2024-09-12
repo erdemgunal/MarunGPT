@@ -32,7 +32,7 @@ export default function AboutPage() {
       link: "/features/about"
     },
     {
-      title: "24/7 Availability",
+      title: "7/24 Availability",
       description: "Round-the-clock access to information and assistance for students.",
       link: "/features/about"
     },
@@ -79,7 +79,7 @@ export default function AboutPage() {
     {
       title: "Impact on Education",
       description:
-        "By integrating AI into the educational process, we're creating a more interactive and engaging learning environment. MarunGPT serves as a 24/7 virtual assistant, helping students with queries, providing study resources, and offering personalized learning recommendations.",
+        "By integrating AI into the educational process, we're creating a more interactive and engaging learning environment. MarunGPT serves as a 7/24 virtual assistant, helping students with queries, providing study resources, and offering personalized learning recommendations.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
