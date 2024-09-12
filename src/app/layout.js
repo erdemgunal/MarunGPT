@@ -3,7 +3,6 @@ import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-// import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
         className={cn('relative h-full font-sans antialiased', geistMono)}
       >
         <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflow-hidden">
-          {/* <BackgroundBeams /> */}
           <Header />
             {children}
           <Footer />
