@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 
-export default function OurSchool() {
+export default function Contact() {
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
       <div className="relative z-10 px-4 py-16 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
@@ -13,9 +13,9 @@ export default function OurSchool() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-            Our School
+            Contact Us
           </h1>
-          <TextGenerateEffect words="Marmara University" className="text-xl" />
+          <TextGenerateEffect words="Get in Touch with Us" className="text-xl" />
         </motion.div>
       </div>
     </main>

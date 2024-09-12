@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function BlogPage() {
@@ -67,7 +66,7 @@ export default function BlogPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-            MarunGPT Blog
+            Blog
           </h1>
           <TextGenerateEffect words="Stay Updated with the Latest in AI and Education" className="text-xl" />
         </motion.div>
