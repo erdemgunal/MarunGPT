@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
@@ -113,8 +112,6 @@ export default function AboutPage() {
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
-      {/* <BackgroundBeams /> */}
-      
       <div className="relative z-10 px-4 py-16 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
