@@ -144,7 +144,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-800 rounded-lg p-6 text-center"
+                className="p-6 text-center"
               >
                 <div>
                   <Image
