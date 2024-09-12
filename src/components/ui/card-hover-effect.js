@@ -4,8 +4,11 @@ export const HoverEffect = ({ items, className }) => {
 
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10", className)}>
-      {items.map((item) => (
-        <div className="relative group block p-2 h-full w-full">
+      {items.map((item, index) => (
+        <div 
+          className="relative group block p-2 h-full w-full"
+          key={index}
+          >
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
