@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export default function Footer() {
   const { register, handleSubmit, reset, formState } = useForm();
-  const { isSubmitting } = formState; // useFormState üzerinden formState alınır
+  const { isSubmitting } = formState;
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState("");
 
@@ -96,7 +96,6 @@ export default function Footer() {
             </Button>
           </div>
         </form>
-        {/* Başarı veya hata mesajını göster */}
         {message && (
           <p className={`mt-4 ${messageColor} font-semibold`}>{message}</p>
         )}
