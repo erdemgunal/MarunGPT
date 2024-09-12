@@ -99,25 +99,6 @@ export default function BlogPage() {
             ))}
           </div>
         </section>
-
-        <section className="my-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Subscribe to Our Newsletter</h2>
-          <form className="max-w-md mx-auto">
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              <button
-                type="submit"
-                className="px-6 py-2 rounded-r-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </section>
       </div>
     </main>
   );
