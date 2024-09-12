@@ -32,7 +32,7 @@ export default function Header() {
     ];
 
     return (
-        <header className={`sticky top-0 z-50 px-0 md:px-0 transition-all duration-300 bg-black/60 backdrop-blur-md`}>
+        <header className={`sticky top-0 z-50 px-0 md:px-0 transition-all duration-300 bg-black/60 backdrop-blur-sm`}>
             <div className="w-full mx-auto flex justify-between items-center py-4 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
                 <div className="flex-shrink-0">
                     <Link href="/" passHref>
