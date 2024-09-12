@@ -56,7 +56,10 @@ export default function Header() {
                         ))}
                     </ul>
                 </nav>
-                <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80">
+                <Button 
+                    href="#get-started" 
+                    className="bg-white text-primary shadow-sm hover:bg-white/80"
+                >
                     Get Started
                 </Button>
             </div>
