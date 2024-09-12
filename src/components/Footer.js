@@ -33,7 +33,7 @@ export default function Footer() {
   ]
 
   return (
-    <section id="signup" className="relative bg-black text-white py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+    <section id="signup" className="relative bg-gradient-to-l from-black to-gray-900 py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div className="mx-auto text-center relative z-10">
         <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
           Stay Informed about Updates
@@ -48,7 +48,7 @@ export default function Footer() {
               required
               className="flex-grow bg-white/10 text-white placeholder-white/50 border-blue-400 transition-all duration-300 focus:border-white"
             />
-            <Button type="submit" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform">
+            <Button type="submit" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 flex items-center">
               <Mail className="w-4 h-4 mr-2" />
               Kaydol
             </Button>
@@ -56,7 +56,7 @@ export default function Footer() {
         </form>
       </div>
       <footer className="py-4 relative z-10">
-        <div className="flex flex-row items-center justify-between gap-8 mt-16">
+        <div className="flex flex-row items-center justify-between gap-4 mt-8">
           <p className="text-white text-sm">
             &copy; 2024 MarunGPT. All rights reserved.
           </p>

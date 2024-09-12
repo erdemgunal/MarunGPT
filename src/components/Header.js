@@ -35,7 +35,6 @@ export default function Header() {
         <header className={`sticky top-0 z-50 px-0 md:px-0 transition-all duration-300 bg-black/60 backdrop-blur-md`}>
             <div className="w-full mx-auto flex justify-between items-center py-4 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
                 <div className="flex-shrink-0">
-                    {/* <span>MarunGPT</span> */}
                     <Link href="/" passHref>
                         <Image
                             src="/marungpt-logo-trans.png"
@@ -50,18 +49,16 @@ export default function Header() {
                     <ul className="flex justify-center space-x-8">
                         {links.map((link, idx) => (
                             <li key={idx}>
-                                <Link href={link.href} className='text-white hover:text-white/50 transition-all duration-300'>
+                                <Link href={link.href} className='text-sm text-white hover:text-white/50 transition-all duration-300'>
                                     {link.title}
                                 </Link>
                             </li>
                         ))}
                     </ul>
                 </nav>
-                {/* <div> */}
                 <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80">
                     Get Started
                 </Button>
-                {/* </div> */}
             </div>
 
             <AnimatePresence>

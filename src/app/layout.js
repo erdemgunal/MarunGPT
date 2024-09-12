@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       >
         <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflox-x-hidden">
           <Header />
-            {children}
+          {children}
           <Footer />
         </main>
       </body>
