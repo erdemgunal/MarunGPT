@@ -7,9 +7,6 @@ import { motion } from "framer-motion";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FaArrowRight } from "react-icons/fa6";
-import Image from "next/image"
-
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   const features = [
@@ -63,26 +60,6 @@ export default function Home() {
             icon: <feature.icon className="h-8 w-8 text-blue-400" />,
             link: feature.href
           }))} />
-        </div>
-      </section>
-      <section className="relative py-20">
-        <div className="mx-auto">
-          <div className="relative w-full">
-            <AspectRatio ratio={16 / 9} className="relative overflow-hidden rounded-md">
-              <Image
-                src="/fef-bina.png"
-                alt="Image"
-                  layout="fill"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/60 flex flex-col items-center justify-center rounded-md text-center text-white">
-                <p className="text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-4">Instant answers. More productivity. Endless inspiration.</p>
-                <Button href="#signup" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:translate-x-2">
-                  Try Now
-                </Button>
-              </div>
-            </AspectRatio>
-          </div>
         </div>
       </section>
     </main>
