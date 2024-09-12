@@ -113,7 +113,7 @@ export default function AboutPage() {
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       
       <div className="relative z-10 px-4 py-16 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <motion.div
