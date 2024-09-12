@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "@/components/Header";
 
 const geistMono = localFont({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </main>
+        <SpeedInsights />
       </body>
     </html>
   );
