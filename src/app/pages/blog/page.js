@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import Link from "next/link";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 export default function BlogPage() {
   const featuredPosts = [
@@ -35,26 +35,46 @@ export default function BlogPage() {
 
   const recentPosts = [
     {
+      category: "Updates",
       title: "MarunGPT Updates: New Features Released",
+      src: '/recent-posts.png',
       date: "May 15, 2023",
-      link: "/blog/marungpt-updates"
     },
     {
       title: "How to Make the Most of MarunGPT",
+      category: "Tips & Tricks",
+      src: '/recent-posts3.png',
       date: "May 10, 2023",
-      link: "/blog/maximize-marungpt"
     },
     {
       title: "MarunGPT and Academic Integrity",
+      category: "Ethics",
+      src: '/recent-posts2.jpeg',
       date: "May 5, 2023",
-      link: "/blog/academic-integrity"
     },
     {
       title: "Faculty Perspectives on AI Assistants",
+      category: "Perspectives",
+      src: '/recent-posts4.png',
       date: "April 30, 2023",
-      link: "/blog/faculty-perspectives"
     },
+    {
+      title: "MarunGPT: The Ultimate Study Buddy",
+      category: "Study Tips",
+      src: '/recent-posts5.png',
+      date: "April 25, 2023",
+    },
+    {
+      title: "AI in the Classroom: A Student's View",
+      category: "Student Life",
+      src: '/recent-posts6.png',
+      date: "April 20, 2023",
+    }
   ];
+
+  const cards = recentPosts.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
@@ -79,7 +99,13 @@ export default function BlogPage() {
           }))} />
         </section>
 
-        <section className="my-16">
+        <div className="my-16 w-full h-full py-20">
+          <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
+          Recent Posts
+          </h2>
+          <Carousel items={cards} />
+        </div>
+        {/* <section className="my-16">
           <h2 className="text-3xl font-bold text-center mb-8">Recent Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {recentPosts.map((post, index) => (
@@ -88,7 +114,7 @@ export default function BlogPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-800 rounded-lg p-6"
+                className="bg-gray-900 p-6 rounded-lg shadow-lg"
               >
                 <Link href={post.link} className="block hover:text-blue-400 transition-colors">
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
@@ -97,7 +123,7 @@ export default function BlogPage() {
               </motion.div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
