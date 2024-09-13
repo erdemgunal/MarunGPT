@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Head from "next/head";
 import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
@@ -19,6 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
+      <Head>
+        <meta name="theme-color" content="#0B3160" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <body
         className={cn('relative h-full font-sans antialiased', geistMono)}
       >
