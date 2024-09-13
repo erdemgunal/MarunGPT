@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
-export default function NavLinks({ links, mobile = false }) {
+export default function NavLinks({ links, mobile = false, toggleMobileMenu }) {
     const pathname = usePathname();
     
     return (
@@ -14,13 +14,16 @@ export default function NavLinks({ links, mobile = false }) {
                 {links.map((link, index) => (
                     <li key={index}>
                         <Link href={link.href}>
-                            <div className={clsx(
-                                'text-sm text-white hover:text-white/50 transition-all duration-300',
-                                {
-                                    'font-bold': pathname === link.href,
-                                    'text-2xl': mobile,
-                                }
-                            )}>
+                            <div
+                                onClick={mobile ? toggleMobileMenu : null}
+                                className={clsx(
+                                    'text-sm text-white hover:text-white/50 transition-all duration-300',
+                                    {
+                                        'font-bold': pathname === link.href,
+                                        'text-2xl': mobile,
+                                    }
+                                )}
+                            >
                                 {link.title}
                             </div>
                         </Link>

@@ -86,7 +86,7 @@ export default function Navbar() {
                         className="md:hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-40 flex flex-col items-center justify-start pt-4 px-4"
                     >
                         <div className="w-full flex flex-col space-y-6">
-                            <NavLinks links={links} mobile={true} />
+                            <NavLinks links={links} mobile={true} toggleMobileMenu={toggleMobileMenu} />
                             <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80 mt-4" onClick={toggleMobileMenu}>
                                 Get Started
                             </Button>
