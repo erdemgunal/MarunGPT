@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  weight: "100 900",
+  weight: "100 300 400 900",
 });
 
 export const metadata = {

@@ -1,19 +1,23 @@
+// card-hover-effect.js
 import { cn } from "@/lib/utils";
+import { motion } from 'framer-motion';
 
 export const HoverEffect = ({ items, className }) => {
-
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10", className)}>
       {items.map((item, index) => (
-        <div 
+        <motion.div 
           className="relative group block p-2 h-full w-full"
           key={index}
-          >
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.3 }}
+        >
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

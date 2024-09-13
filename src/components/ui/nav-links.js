@@ -1,20 +1,26 @@
 "use client";
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
-export default function NavLinks({ links }) {
+export default function NavLinks({ links, mobile = false }) {
     const pathname = usePathname();
+    
     return (
-        <nav className='flex-grow'>
-            <ul className='flex justify-center space-x-8'>
-                {links.map((link,index) => (
+        <nav className={mobile ? 'w-full' : 'flex-grow'}>
+            <ul className={clsx(
+                mobile ? 'flex flex-col space-y-6 items-center' : 'flex justify-center space-x-8',
+            )}>
+                {links.map((link, index) => (
                     <li key={index}>
                         <Link href={link.href}>
-                            <div className={clsx('text-sm text-white hover:text-white/50 transition-all duration-300', {
-                                'font-bold': pathname === link.href,
-                            })}>
+                            <div className={clsx(
+                                'text-sm text-white hover:text-white/50 transition-all duration-300',
+                                {
+                                    'font-bold': pathname === link.href,
+                                    'text-2xl': mobile,
+                                }
+                            )}>
                                 {link.title}
                             </div>
                         </Link>
@@ -22,5 +28,5 @@ export default function NavLinks({ links }) {
                 ))}
             </ul>
         </nav>
-    )
+    );
 }
