@@ -45,7 +45,7 @@ export default function Home() {
             </h2>
             <TextGenerateEffect words="Make your university life easier with MarunGPT!" className="text-xl mb-8 tracking-tight" />
           </motion.div>
-          <Button href="#signup" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform">
+          <Button href="/pages/contact-us" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform">
             Try it now
             <FaArrowRight className="w-4 h-4 ml-2" />
           </Button>

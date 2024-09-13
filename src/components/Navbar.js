@@ -52,7 +52,7 @@ export default function Navbar() {
 
                 {/* Get Started Button (Desktop) */}
                 <div className="hidden sm:block">
-                    <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80">
+                    <Button href="/pages/contact-us" className="bg-white text-primary shadow-sm hover:bg-white/80">
                         Get Started
                     </Button>
                 </div>
