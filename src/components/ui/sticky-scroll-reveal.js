@@ -31,17 +31,21 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "var(--cyan-500)",
-    "var(--pink-500)",
-    "var(--orange-500)",
-    "var(--blue-500)",
+    "#FF6F00", // Canlı Turuncu
+    "#43A047", // Canlı Yeşil
+    "#1E88E5", // Canlı Mavi
+    "#8E24AA", // Canlı Mor
+    "#D32F2F", // Canlı Kırmızı
+    "#FBC02D", // Canlı Sarı
   ];
 
   const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-    "linear-gradient(to bottom right, var(--blue-500), var(--purple-500))",
+    "linear-gradient(to bottom right, #FF6F00, #FFAB91)", // Turuncu - Pastel Turuncu
+    "linear-gradient(to bottom right, #43A047, #A5D6A7)", // Yeşil - Pastel Yeşil
+    "linear-gradient(to bottom right, #1E88E5, #90CAF9)", // Mavi - Pastel Mavi
+    "linear-gradient(to bottom right, #8E24AA, #CE93D8)", // Mor - Pastel Mor
+    "linear-gradient(to bottom right, #D32F2F, #EF9A9A)", // Kırmızı - Pastel Kırmızı
+    "linear-gradient(to bottom right, #FBC02D, #FFF59D)", // Sarı - Pastel Sarı
   ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);

@@ -46,19 +46,19 @@ export default function Navbar() {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden lg:flex items-center space-x-8 flex-grow justify-center">
+                <div className="hidden sm:flex items-center space-x-8 flex-grow justify-center">
                     <NavLinks links={links} />
                 </div>
 
                 {/* Get Started Button (Desktop) */}
-                <div className="hidden lg:block">
+                <div className="hidden sm:block">
                     <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80">
                         Get Started
                     </Button>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button onClick={toggleMobileMenu} className="lg:hidden text-white z-50">
+                <button onClick={toggleMobileMenu} className="sm:hidden text-white z-50">
                     {isMobileMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}
                 </button>
             </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: '-100%', opacity: 0 }}
                         transition={{ duration: 0.5, ease: 'easeInOut' }}
-                        className="lg:hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-40 flex flex-col items-center justify-start pt-4 px-4"
+                        className="md:hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-40 flex flex-col items-center justify-start pt-4 px-4"
                     >
                         <div className="w-full flex flex-col space-y-6">
                             <NavLinks links={links} mobile={true} />
