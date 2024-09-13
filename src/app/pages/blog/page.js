@@ -11,25 +11,21 @@ export default function BlogPage() {
       title: "Introducing MarunGPT",
       description: "Learn about the revolutionary AI assistant for Marmara University students.",
       image: "/blog-post-1.jpg",
-      link: "/blog/introducing-marungpt"
     },
     {
       title: "AI in Education: The Future is Here",
       description: "Explore how AI is transforming the educational landscape at Marmara University.",
       image: "/blog-post-2.jpg",
-      link: "/blog/ai-in-education"
     },
     {
       title: "Student Success Stories with MarunGPT",
       description: "Read about how students are benefiting from MarunGPT in their academic journey.",
       image: "/blog-post-3.jpg",
-      link: "/blog/student-success-stories"
     },
     {
       title: "The Technology Behind MarunGPT",
       description: "A deep dive into the advanced AI and NLP powering MarunGPT.",
       image: "/blog-post-4.jpg",
-      link: "/blog/technology-behind-marungpt"
     },
   ];
 
@@ -105,25 +101,6 @@ export default function BlogPage() {
           </h2>
           <Carousel items={cards} />
         </div>
-        {/* <section className="my-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Recent Posts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {recentPosts.map((post, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-900 p-6 rounded-lg shadow-lg"
-              >
-                <Link href={post.link} className="block hover:text-blue-400 transition-colors">
-                  <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-                  <p className="text-blue-400">{post.date}</p>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </section> */}
       </div>
     </main>
   );
