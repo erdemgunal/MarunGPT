@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import Head from "next/head";
 import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
@@ -20,11 +19,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <Head>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
         <meta name="theme-color" content="#0B3160" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+        <link
+          rel="preload"
+          href="/fonts/GeistMonoVF.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={cn('relative h-full font-sans antialiased', geistMono)}
       >

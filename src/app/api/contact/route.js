@@ -7,7 +7,7 @@ const contactSchema = z.object({
     message: z.string().min(1, "Mesaj alanı boş olamaz."),
 });
 
-function sendToDiscord(name, email, message, success) {
+async function sendToDiscord(name, email, message, success) {
     const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
     const color = success ? 0x00FF00 : 0xFF0000;
     const title = success ? 'New contact message!' : 'Failed contact message!';
@@ -33,7 +33,7 @@ function sendToDiscord(name, email, message, success) {
         ]
     };
 
-    fetch(webhookUrl, {
+    return fetch(webhookUrl, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
