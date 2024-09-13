@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
-        <meta name="theme-color" content="#0B3160" />
+        <meta name="theme-color" content="#000000" />
         <link
           rel="preload"
           href="/fonts/GeistMonoVF.woff"
