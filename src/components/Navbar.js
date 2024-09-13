@@ -10,8 +10,8 @@ import NavLinks from './ui/nav-links';
 const links = [
     { 'title': 'About', 'href': '/pages/about' },
     { 'title': 'Blog', 'href': '/pages/blog' },
-    { 'title': 'Our School', 'href': '/pages/our-school' },
     { 'title': 'Contact', 'href': '/pages/contact-us' },
+    { 'title': 'Our School', 'href': '/pages/our-school' },
 ];
 
 export default function Navbar() {
