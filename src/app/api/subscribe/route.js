@@ -20,7 +20,7 @@ async function sendEmail(email) {
     const mailOptions = {
         from: process.env.EMAIL_SENDER,
         to: email,
-        subject: 'Newsletter Kaydı',
+        subject: 'Newsletter Signup',
         html: `
             <html>
                 <head>
@@ -77,13 +77,13 @@ async function sendEmail(email) {
                 <body>
                     <div class="container">
                         <div class="content">
-                            <h1>Teşekkürler!</h1>
-                            <p>Newsletter'ımıza kaydolduğunuz için teşekkür ederiz! Güncellemeleri almak için e-posta adresinizi doğru girdiğinizden emin olun.</p>
-                            <a href="#get-started" class="cta-button">Başlayın</a>
+                            <h1>Thanks!</h1>
+                            <p>Thank you for signing up for our Newsletter! Make sure you enter your e-mail address correctly to receive updates.</p>
+                            <a href="#get-started" class="cta-button">Get Started</a>
                         </div>
                         <div class="footer">
-                            <p>&copy; 2024 MarunGPT. Tüm hakları saklıdır. <br>
-                            <a href="${unsubscribeLink}">Abonelikten çık</a></p>
+                            <p>&copy; 2024 MarunGPT. All rights reserved. <br>
+                            <a href="${unsubscribeLink}">Unsubscribe</a></p>
                         </div>
                     </div>
                 </body>

@@ -90,7 +90,7 @@ export default function Footer() {
               ) : (
                 <>
                   <Mail className="w-4 h-4 mr-2" />
-                  Kaydol
+                  Sign up
                 </>
               )}
             </Button>
