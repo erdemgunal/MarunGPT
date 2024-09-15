@@ -26,7 +26,7 @@ export default function OurSchoolPage() {
     },
     {
       title: "MarunGPT: Your AI Companion",
-      content: "MarunGPT is your AI assistant for all things Marmara University. Get instant answers about courses, campus life, and university services. Explore ideas, find smart solutions, and navigate your academic journey with ease.",
+      content: "MarunGPT is your AI assistant for all things at Marmara University. Get instant answers about courses, campus life, and university services. Explore ideas, find smart solutions, and navigate your academic journey with ease.",
       icon: FaUsers
     }
   ];
