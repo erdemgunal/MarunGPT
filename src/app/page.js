@@ -43,7 +43,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
               Artificial Intelligence Assistant of Marmara University
             </h2>
-            <TextGenerateEffect words="Make your university life easier with MarunGPT!" className="text-lg md:text-xl" />
+            <TextGenerateEffect words="Make your university life easier with MarunGPT!" className="text-lg md:text-xl mb-2" />
           </motion.div>
           <Button href="/pages/contact-us" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform">
             Try it now
