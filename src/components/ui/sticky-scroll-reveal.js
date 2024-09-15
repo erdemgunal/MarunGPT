@@ -31,21 +31,19 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "#FF6F00", // Canlı Turuncu
-    "#43A047", // Canlı Yeşil
-    "#1E88E5", // Canlı Mavi
-    "#8E24AA", // Canlı Mor
-    "#D32F2F", // Canlı Kırmızı
-    "#FBC02D", // Canlı Sarı
+    "#ff6d10", // Canlı Turuncu
+    "#76bd22", // Canlı Yeşil
+    "#008bac", // Canlı Mavi
+    "#8348ad", // Canlı Mor
+    "#d60037", // Canlı Kırmızı
   ];
 
   const linearGradients = [
-    "linear-gradient(to bottom right, #FF6F00, #FFAB91)", // Turuncu - Pastel Turuncu
-    "linear-gradient(to bottom right, #43A047, #A5D6A7)", // Yeşil - Pastel Yeşil
-    "linear-gradient(to bottom right, #1E88E5, #90CAF9)", // Mavi - Pastel Mavi
-    "linear-gradient(to bottom right, #8E24AA, #CE93D8)", // Mor - Pastel Mor
-    "linear-gradient(to bottom right, #D32F2F, #EF9A9A)", // Kırmızı - Pastel Kırmızı
-    "linear-gradient(to bottom right, #FBC02D, #FFF59D)", // Sarı - Pastel Sarı
+    "linear-gradient(135deg, #ff6d10, #ff6d10)",
+    "linear-gradient(135deg, #76bd22, #76bd22)",
+    "linear-gradient(135deg, #008bac, #008bac)",
+    "linear-gradient(135deg, #8348ad, #8348ad)",
+    "linear-gradient(135deg, #d60037, #d60037)",
   ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
@@ -72,7 +70,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-slate-100">
+                className="text-2xl font-bold text-white">
                 {item.title}
               </motion.h2>
               <motion.p
@@ -82,7 +80,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10">
+                className="text-kg text-white max-w-sm mt-10">
                 {item.description}
               </motion.p>
             </div>
