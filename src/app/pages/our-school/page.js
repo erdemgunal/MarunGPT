@@ -42,7 +42,7 @@ export default function OurSchoolPage() {
             className="text-center mb-8 md:mb-16"
           >
             <Image
-              src='/Y_TekRenk_KoyuZemin.png'
+              src='/Y_TekRenk_KoyuZemin_eng.png'
               alt="Marmara University Logo"
               width={200}
               height={100}
