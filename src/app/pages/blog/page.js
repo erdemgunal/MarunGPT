@@ -46,7 +46,7 @@ export default function BlogPage() {
     {
       title: "MarunGPT and Academic Integrity",
       category: "Ethics",
-      src: '/recent-posts2.jpeg',
+      src: '/recent-posts2.jpg',
       date: "May 5, 2023",
     },
     {
