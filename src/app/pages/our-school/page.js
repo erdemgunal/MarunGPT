@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { useState } from "react";
@@ -46,7 +46,7 @@ export default function OurSchoolPage() {
               alt="Marmara University Logo"
               width={200}
               height={100}
-              priority={true} // Ensure the logo is loaded quickly
+              priority={true}
               className="mx-auto mb-4"
             />
             <h1
@@ -117,31 +117,34 @@ export default function OurSchoolPage() {
             </Button>
           </motion.div>
 
-          {showMore && (
-            <motion.div
-              id="extra-content"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mt-8"
-            >
-              <Card className="bg-white/10 backdrop-blur-lg border-none text-white">
-                <CardContent className="p-4 md:p-6">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
-                    Why Choose Marmara University?
-                  </h2>
-                  <ul className="list-disc list-inside space-y-1 md:space-y-2 text-sm md:text-base">
-                    <li>State-of-the-art facilities and laboratories</li>
-                    <li>Internationally recognized faculty members</li>
-                    <li>Diverse student body from around the world</li>
-                    <li>Strong industry connections and internship opportunities</li>
-                    <li>Beautiful campus located in the heart of Istanbul</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </motion.div>
-          )}
+          {/* AnimatePresence wraps the content that needs animations for mounting/unmounting */}
+          <AnimatePresence>
+            {showMore && (
+              <motion.div
+                id="extra-content"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.5 }}
+                className="mt-8"
+              >
+                <Card className="bg-white/10 backdrop-blur-lg border-none text-white">
+                  <CardContent className="p-4 md:p-6">
+                    <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
+                      Why Choose Marmara University?
+                    </h2>
+                    <ul className="list-disc list-inside space-y-1 md:space-y-2 text-sm md:text-base">
+                      <li>State-of-the-art facilities and laboratories</li>
+                      <li>Internationally recognized faculty members</li>
+                      <li>Diverse student body from around the world</li>
+                      <li>Strong industry connections and internship opportunities</li>
+                      <li>Beautiful campus located in the heart of Istanbul</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </main>
     </BackgroundGradientAnimation>
