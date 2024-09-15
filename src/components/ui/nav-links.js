@@ -20,7 +20,7 @@ export default function NavLinks({ links, mobile = false, toggleMobileMenu }) {
                                     'text-sm text-white hover:text-white/50 transition-all duration-300',
                                     {
                                         'font-bold': pathname === link.href,
-                                        'text-2xl': mobile,
+                                        'text-xl': mobile,
                                     }
                                 )}
                             >
