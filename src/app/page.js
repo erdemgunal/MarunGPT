@@ -8,11 +8,6 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FaArrowRight } from "react-icons/fa6";
 
-export const metadata = {
-  title: "MarunGPT - Home",
-  description: "MarunGPT is an AI assistant for Marmara University students. Get instant answers to your questions and navigate your academic journey with ease.",
-}
-
 export default function Home() {
   const features = [
     {

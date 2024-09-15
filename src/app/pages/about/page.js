@@ -6,11 +6,6 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 
-export const metadata = {
-  title: "MarunGPT - About",
-  description: "Learn more about MarunGPT, the AI assistant for Marmara University students."
-}
-
 export default function AboutPage() {
   const teamMembers = [
     {

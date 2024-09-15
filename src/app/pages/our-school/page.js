@@ -10,11 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
-export const metadata = {
-  title: "MarunGPT - Our School",
-  description: "Learn more about Marmara University, one of the oldest educational institutions in Turkey."
-};
-
 export default function OurSchoolPage() {
   const [showMore, setShowMore] = useState(false);
 
@@ -26,7 +21,7 @@ export default function OurSchoolPage() {
     },
     {
       title: "Academic Excellence",
-      content: "Marmara University boasts 21 faculties, 1 school, 4 vocational schools, 12 institutes, and 153 active undergraduate and associate degree programs. We offer education in five languages: Turkish, English, French, German.",
+      content: "Marmara University boasts 21 faculties, 1 school, 4 vocational schools, 12 institutes, and 153 active undergraduate and associate degree programs. We offer education in five languages: Turkish, English, French, and German.",
       icon: FaGraduationCap
     },
     {
@@ -51,30 +46,46 @@ export default function OurSchoolPage() {
               alt="Marmara University Logo"
               width={200}
               height={100}
+              priority={true} // Ensure the logo is loaded quickly
               className="mx-auto mb-4"
             />
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
+            <h1
+              className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight"
+              aria-label="Welcome to Marmara University"
+            >
               Welcome to Marmara University
             </h1>
-            <TextGenerateEffect words="Discover our innovative learning environment!" className="text-lg md:text-xl" />
+            <TextGenerateEffect
+              words="Discover our innovative learning environment!"
+              className="text-lg md:text-xl"
+            />
           </motion.div>
 
-          <motion.section 
+          <motion.section
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {sections.map(({ title, content, icon: Icon }, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="bg-white/10 backdrop-blur-lg border-none text-white hover:bg-white/20 transition-all duration-300"
+                aria-labelledby={`section-${index}`}
               >
                 <CardHeader className="flex flex-col items-center p-4 md:p-6">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-500 rounded-full flex items-center justify-center mb-2 md:mb-4">
+                  <div
+                    className="w-12 h-12 md:w-16 md:h-16 bg-blue-500 rounded-full flex items-center justify-center mb-2 md:mb-4"
+                    aria-hidden="true"
+                  >
                     <Icon size={24} />
                   </div>
-                  <CardTitle className="text-lg md:text-xl text-center">{title}</CardTitle>
+                  <CardTitle
+                    id={`section-${index}`}
+                    className="text-lg md:text-xl text-center"
+                  >
+                    {title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="p-4 md:p-6">
                   <p className="text-sm md:text-base">{content}</p>
@@ -92,13 +103,23 @@ export default function OurSchoolPage() {
             <Button
               onClick={() => setShowMore(!showMore)}
               className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base"
+              aria-expanded={showMore}
+              aria-controls="extra-content"
             >
-              {showMore ? "Show Less" : "Learn More"} <FaChevronDown className={cn("ml-2 transition-transform", showMore && "rotate-180")} />
+              {showMore ? "Show Less" : "Learn More"}{" "}
+              <FaChevronDown
+                className={cn(
+                  "ml-2 transition-transform",
+                  showMore && "rotate-180"
+                )}
+                aria-hidden="true"
+              />
             </Button>
           </motion.div>
 
           {showMore && (
             <motion.div
+              id="extra-content"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
@@ -107,7 +128,9 @@ export default function OurSchoolPage() {
             >
               <Card className="bg-white/10 backdrop-blur-lg border-none text-white">
                 <CardContent className="p-4 md:p-6">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">Why Choose Marmara University?</h2>
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
+                    Why Choose Marmara University?
+                  </h2>
                   <ul className="list-disc list-inside space-y-1 md:space-y-2 text-sm md:text-base">
                     <li>State-of-the-art facilities and laboratories</li>
                     <li>Internationally recognized faculty members</li>

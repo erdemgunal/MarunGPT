@@ -7,11 +7,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
-export const metadata = {
-  title: "MarunGPT - Contact Us",
-  description: "Contact MarunGPT for questions, feedback, and support. We are here to help you."
-}
-
 export default function Contact() {
   const { register, handleSubmit, reset, formState } = useForm();
   const { isSubmitting } = formState;
