@@ -122,7 +122,7 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
             About MarunGPT
           </h1>
-          <TextGenerateEffect words="Empowering Marmara University with Artificial Intelligence" className="text-xl" />
+          <TextGenerateEffect words="Empowering Marmara University with Artificial Intelligence" className="text-xl mb-8 tracking-tight" />
         </motion.div>
 
         <StickyScroll content={content} />

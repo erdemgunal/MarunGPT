@@ -106,7 +106,7 @@ export default function Footer() {
           <div className="flex flex-row gap-8">
             {social_media.map((item, index) => (
               <Link key={`social-${index}`} href={item.href} passHref>
-                <div className="text-white hover:text-blue-400 transition-all duration-300 cursor-pointer">
+                <div className="text-white hover:text-blue-600 transition-all duration-300 cursor-pointer">
                   <item.icon className="w-4 h-4" />
                 </div>
               </Link>

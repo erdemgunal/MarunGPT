@@ -84,7 +84,7 @@ export default function BlogPage() {
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
             Blog
           </h1>
-          <TextGenerateEffect words="Stay Updated with the Latest in AI and Education" className="text-xl" />
+          <TextGenerateEffect words="Stay Updated with the Latest in AI and Education" className="text-xl mb-8 tracking-tight" />
         </motion.div>
 
         <section className="my-16">

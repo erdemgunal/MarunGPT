@@ -15,10 +15,10 @@ export default function OurSchoolPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
+            <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
               Welcome to Marmara University
             </h1>
-            <TextGenerateEffect words="Discover our school!" className="text-xl" />
+            <TextGenerateEffect words="Discover our school!" className="text-xl tracking-tight" />
           </motion.div>
         </div>
       </main>
