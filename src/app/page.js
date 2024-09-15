@@ -40,10 +40,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
               Artificial Intelligence Assistant of Marmara University
             </h2>
-            <TextGenerateEffect words="Make your university life easier with MarunGPT!" className="text-xl mb-8 tracking-tight" />
+            <TextGenerateEffect words="Make your university life easier with MarunGPT!" className="text-lg md:text-xl" />
           </motion.div>
           <Button href="/pages/contact-us" className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform">
             Try it now

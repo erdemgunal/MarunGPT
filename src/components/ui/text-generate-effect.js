@@ -20,7 +20,7 @@ export const TextGenerateEffect = ({
       duration: duration ? duration : 1,
       delay: stagger(0.2),
     });
-  }, [animate, filter, duration]); // Bağımlılıklar dizisine animate, filter, ve duration ekledik
+  }, [animate, filter, duration]); 
 
   const renderWords = () => {
     return (

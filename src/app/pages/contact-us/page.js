@@ -52,10 +52,10 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
             Contact Us
           </h1>
-          <TextGenerateEffect words="Get in Touch with Us" className="text-xl mb-8 tracking-tight" />
+          <TextGenerateEffect words="Get in Touch with Us" className="text-lg md:text-xl" />
           <p className='text-lg text-center mb-10 text-white/50 max-w-md'>
             Feel free to send us your questions, suggestions or feedback. We are here to help you.
           </p>
