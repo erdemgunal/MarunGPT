@@ -5,6 +5,11 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
+export const metadata = {
+  title: "MarunGPT - Blog",
+  description: "Stay updated with the latest news and articles about AI, education, and MarunGPT."
+}
+
 export default function BlogPage() {
   const featuredPosts = [
     {

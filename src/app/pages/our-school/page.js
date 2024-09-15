@@ -10,6 +10,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
+export const metadata = {
+  title: "MarunGPT - Our School",
+  description: "Learn more about Marmara University, one of the oldest educational institutions in Turkey."
+};
+
 export default function OurSchoolPage() {
   const [showMore, setShowMore] = useState(false);
 
