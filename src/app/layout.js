@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import ClarityMsAnalytics from "@/components/ClarityMsAnalytics";
 import Navbar from "@/components/Navbar";
 
 const geistMono = localFont({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           <SpeedInsights />
         </main>
         <GoogleAnalytics />
+        <ClarityMsAnalytics />
       </body>
     </html>
   );
