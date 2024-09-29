@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { AnimatePresence, motion } from 'framer-motion';
 import NavLinks from './ui/nav-links';
 
 const links = [
@@ -24,11 +25,7 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    useEffect(() => {
-        document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'auto';
-    }, [isMobileMenuOpen]);
-
-    const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
+    const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
     return (
         <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/60 backdrop-blur-sm' : 'bg-transparent'}`}>
@@ -58,9 +55,23 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button onClick={toggleMobileMenu} className="sm:hidden text-white z-50">
-                    {isMobileMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}
-                </button>
+                <div className="flex sm:hidden">
+                    <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                        <SheetTrigger asChild>
+                            <button className="text-white z-50">
+                                <HiMenu size={32} />
+                            </button>
+                        </SheetTrigger>
+                        <SheetContent side="top" className="p-4 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-start">
+                            <div className="w-full flex flex-col space-y-6 mt-10">
+                                <NavLinks links={links} mobile={true} toggleMobileMenu={toggleMobileMenu} />
+                                <Button href="/pages/contact-us" className="bg-white text-primary shadow-sm hover:bg-white/80 mt-4" onClick={toggleMobileMenu}>
+                                    Get Started
+                                </Button>
+                            </div>
+                        </SheetContent>
+                    </Sheet>
+                </div>
             </div>
             <AnimatePresence>
                 {scrolled && (
@@ -72,26 +83,6 @@ export default function Navbar() {
                         style={{ originX: 0.5 }}
                         className="absolute left-0 right-0 border-b border-white/20"
                     />
-                )}
-            </AnimatePresence>
-
-            {/* Mobile Menu */}
-            <AnimatePresence>
-                {isMobileMenuOpen && (
-                    <motion.div
-                        initial={{ y: '-100%', opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: '-100%', opacity: 0 }}
-                        transition={{ duration: 0.5, ease: 'easeInOut' }}
-                        className="md:hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-40 flex flex-col items-center justify-start pt-4 px-4"
-                    >
-                        <div className="w-full flex flex-col space-y-6">
-                            <NavLinks links={links} mobile={true} toggleMobileMenu={toggleMobileMenu} />
-                            <Button href="#get-started" className="bg-white text-primary shadow-sm hover:bg-white/80 mt-4" onClick={toggleMobileMenu}>
-                                Get Started
-                            </Button>
-                        </div>
-                    </motion.div>
                 )}
             </AnimatePresence>
         </nav>
