@@ -6,41 +6,22 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
 export default function AboutPage() {
   const teamMembers = [
-    {
-      name: "Hakkı",
-      role: "Project Lead",
-      image: "https://avatars.githubusercontent.com/u/65365648?v=4",
-    },
-    {
-      name: "Kayra",
-      role: "AI Researcher",
-      image: "https://avatars.githubusercontent.com/u/57875608?v=4",
-    }
+    { name: "Hakkı", role: "Project Lead", image: "https://avatars.githubusercontent.com/u/65365648?v=4" },
+    { name: "Kayra", role: "AI Researcher", image: "https://avatars.githubusercontent.com/u/57875608?v=4" },
   ];
 
   const projectFeatures = [
-    {
-      title: "Natural Language Processing",
-      description: "Advanced NLP capabilities for understanding and generating human-like text.",
-      link: "/features/about"
-    },
-    {
-      title: "Personalized Learning",
-      description: "Adaptive learning paths tailored to each student's needs and progress.",
-      link: "/features/about"
-    },
-    {
-      title: "7/24 Availability",
-      description: "Round-the-clock access to information and assistance for students.",
-      link: "/features/about"
-    },
-    {
-      title: "Multi-lingual Support",
-      description: "Support for multiple languages to cater to a diverse student body.",
-      link: "/features/about"
-    },
+    { title: "Natural Language Processing", description: "Advanced NLP capabilities.", link: "/features/about" },
+    { title: "Personalized Learning", description: "Adaptive learning paths.", link: "/features/about" },
+    { title: "7/24 Availability", description: "Round-the-clock assistance.", link: "/features/about" },
+    { title: "Multi-lingual Support", description: "Support for multiple languages.", link: "/features/about" },
   ];
 
   const content = [
@@ -113,29 +94,53 @@ export default function AboutPage() {
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
       <div className="relative z-10 px-4 py-16 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+        
+        {/* Başlık ve Açıklama */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight">
             About MarunGPT
           </h1>
-          <TextGenerateEffect words="Empowering Marmara University with Artificial Intelligence" className="text-xl mb-8 tracking-tight" />
+          <TextGenerateEffect
+            words="Empowering Marmara University with Artificial Intelligence"
+            className="text-xl mb-8 tracking-tight"
+          />
         </motion.div>
 
-        <StickyScroll content={content} />
+        {/* Sticky Scroll */}
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
+          <StickyScroll content={content} />
+        </motion.div>
 
-        <section className="my-16">
+        {/* Key Features */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          className="my-16"
+        >
           <h2 className="text-3xl font-bold text-center mb-8">Key Features</h2>
-          <HoverEffect items={projectFeatures.map(feature => ({
-            ...feature,
-            link: feature.link
-          }))} />
-        </section>
+          <HoverEffect
+            items={projectFeatures.map((feature) => ({
+              ...feature,
+              link: feature.link,
+            }))}
+          />
+        </motion.section>
 
-        <section className="my-16">
+        {/* Our Team */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          className="my-16"
+        >
           <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
@@ -146,21 +151,19 @@ export default function AboutPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 text-center"
               >
-                <div>
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto mb-4"
-                  />
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-blue-400">{member.role}</p>
-                </div>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={200}
+                  height={200}
+                  className="rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <p className="text-blue-400">{member.role}</p>
               </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
       </div>
     </main>
   );
