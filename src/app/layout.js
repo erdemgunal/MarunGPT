@@ -32,9 +32,7 @@ export default function RootLayout({ children }) {
         className={cn('relative h-full font-sans antialiased', geistMono)}
       >
         <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflox-x-hidden">
-          <Navbar />
           {children}
-          <Footer />
           <SpeedInsights />
         </main>
         <GoogleAnalytics />

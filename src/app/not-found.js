@@ -28,7 +28,13 @@ export default function NotFound() {
             </Button>
           </Link>
           <Button
-            onClick={() => window.history.back()}
+            onClick={() => {
+              if (window.history.length > 1) {
+                window.history.back();
+              } else {
+                window.location.href = "/";
+              }
+            }}
             variant="outline"
             className="group border-white/20 hover:bg-white/90 hover:border-white/40 text-primary transition-all duration-300"
           >
