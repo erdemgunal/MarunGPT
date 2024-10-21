@@ -48,72 +48,68 @@ export default function Home() {
   };
 
   return (
-    <>
-      <Navbar />
-      <main className="relative min-h-screen z-10 py-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-        <BackgroundBeams />
-        <section className="relative py-20 overflow-hidden">
-          <div className="mx-auto text-center relative z-10">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
+    <main className="relative min-h-screen z-10 py-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+      <BackgroundBeams />
+      <section className="relative py-20 overflow-hidden">
+        <div className="mx-auto text-center relative z-10">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.h2
+              variants={itemVariants}
+              className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight"
             >
-              <motion.h2
-                variants={itemVariants}
-                className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 tracking-tight"
-              >
-                Artificial Intelligence Assistant of Marmara University
-              </motion.h2>
-              <motion.div variants={itemVariants}>
-                <TextGenerateEffect
-                  words="Make your university life easier with MarunGPT!"
-                  className="text-lg md:text-xl mb-8"
-                />
-              </motion.div>
-              <motion.div variants={itemVariants}>
-                <Button
-                  href="/pages/contact-us"
-                  className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform"
-                >
-                  Try it now
-                  <FaArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </motion.div>
+              Artificial Intelligence Assistant of Marmara University
+            </motion.h2>
+            <motion.div variants={itemVariants}>
+              <TextGenerateEffect
+                words="Make your university life easier with MarunGPT!"
+                className="text-lg md:text-xl mb-8"
+              />
             </motion.div>
-          </div>
-        </section>
+            <motion.div variants={itemVariants}>
+              <Button
+                href="/pages/contact-us"
+                className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform"
+              >
+                Try it now
+                <FaArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
 
-        <section id="features" className="py-20">
-          <div className="mx-auto">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
+      <section id="features" className="py-20">
+        <div className="mx-auto">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.h1
+              variants={itemVariants}
+              className="text-3xl font-bold text-center"
             >
-              <motion.h1
-                variants={itemVariants}
-                className="text-3xl font-bold text-center"
-              >
-                Features
-              </motion.h1>
-              <motion.div variants={itemVariants}>
-                <HoverEffect
-                  items={features.map((feature) => ({
-                    title: feature.title,
-                    description: feature.description,
-                    icon: (
-                      <feature.icon className="h-8 w-8 text-blue-400" />
-                    ),
-                    link: feature.href,
-                  }))}
-                />
-              </motion.div>
+              Features
+            </motion.h1>
+            <motion.div variants={itemVariants}>
+              <HoverEffect
+                items={features.map((feature) => ({
+                  title: feature.title,
+                  description: feature.description,
+                  icon: (
+                    <feature.icon className="h-8 w-8 text-blue-400" />
+                  ),
+                  link: feature.href,
+                }))}
+              />
             </motion.div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+          </motion.div>
+        </div>
+      </section>
+    </main>
   );
 }
