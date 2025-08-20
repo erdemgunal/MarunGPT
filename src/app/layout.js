@@ -24,14 +24,17 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
         />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#003d72" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body
-        className={cn('relative h-full font-sans antialiased', geistMono)}
+        className={cn('relative h-full font-sans antialiased overflow-x-hidden', geistMono)}
       >
-        <main className="min-h-screen bg-gradient-to-b from-black to-primary text-white overflox-x-hidden">
+        <main className="min-h-screen bg-futuristic text-white overflow-x-hidden">
           <Navbar />
           {children}
           <SpeedInsights />

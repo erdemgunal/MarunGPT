@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -56,11 +57,93 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Mobile-first glassmorphism cards */
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl;
+  }
+  
+  .glass-card-strong {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-xl;
+  }
+  
+  /* Enhanced mobile buttons */
+  .btn-primary {
+    @apply bg-gradient-to-r from-marmara-blue-600 to-marmara-blue-500 text-white font-medium py-3 px-6 rounded-lg hover:from-marmara-blue-700 hover:to-marmara-blue-600 transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply glass-card text-white font-medium py-3 px-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+  
+  /* Mobile-optimized text sizes */
+  .text-hero-mobile {
+    @apply text-2xl leading-tight;
+  }
+  
+  .text-hero-desktop {
+    @apply md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+  
+  .text-body-mobile {
+    @apply text-sm leading-relaxed;
+  }
+  
+  .text-body-desktop {
+    @apply md:text-base lg:text-lg;
+  }
+  
+  /* Futuristic gradient backgrounds */
+  .bg-futuristic {
+    @apply bg-gradient-to-br from-black via-marmara-blue-900 to-black;
+  }
+  
+  .bg-futuristic-card {
+    @apply bg-gradient-to-br from-marmara-blue-900/20 via-black/50 to-marmara-blue-800/20;
+  }
+  
+  /* Mobile-first spacing */
+  .container-mobile {
+    @apply px-4 py-6;
+  }
+  
+  .container-desktop {
+    @apply md:px-8 lg:px-16 xl:px-32 2xl:px-64 md:py-12 lg:py-16;
+  }
+}
+
+/* Custom scrollbar for mobile */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003d72;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056a3;
+}
+
+/* Improved mobile touch targets */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
   }
 }
