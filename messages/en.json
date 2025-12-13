@@ -1,0 +1,460 @@
+{
+    "metadata": {
+        "title": "MarunGPT",
+        "description": "Introducing MarunGPT, your AI assistant for Marmara University. Get answers, explore ideas, and find smart solutions to campus life challenges!"
+    },
+    "header": {
+        "brand": "MarunGPT",
+        "nav": {
+            "architecture": "Architecture",
+            "docs": "Docs",
+            "schoolData": "School Data",
+            "teams": "Teams"
+        },
+        "launchBeta": "Launch Beta",
+        "toggleNavigation": "Toggle navigation"
+    },
+    "hero": {
+        "title": "Marmara University's\nGenerative Intelligence Layer",
+        "description": "A specialized RAG system tailored for academic data. Get accurate, context-aware answers from university regulations and course catalogs.",
+        "metrics": {
+            "latency": "Latency: <200ms",
+            "dataFreshness": "Data Freshness: Real-time",
+            "model": "Model: Fine-tuned"
+        },
+        "actions": {
+            "tryNow": "Try it now",
+            "readManifesto": "Read the Manifesto"
+        }
+    },
+    "infrastructure": {
+        "title": "System Capabilities",
+        "cards": {
+            "nlp": {
+                "title": "Natural Language Processing",
+                "description": "Advanced NLP capabilities tailored for Turkish and English academic context.",
+                "status": "Operational"
+            },
+            "personalized": {
+                "title": "Personalized Learning",
+                "description": "Adaptive learning paths. We offer customized suggestions based on your curriculum year."
+            },
+            "availability": {
+                "title": "24/7 Availability",
+                "description": "Round-the-clock assistance for exam prep and administrative queries."
+            }
+        }
+    },
+    "mission": {
+        "systemLabel": "// SYSTEM_PHILOSOPHY :: CORE_MANIFESTO_V1",
+        "title": "Intelligent retrieval.",
+        "titleHighlight": "MarunGPT is a RAG system powered by Marmara University data.",
+        "description": "A retrieval-augmented generation application designed to answer questions by retrieving relevant information from Marmara University's digital resources. Ask questions, get precise answers extracted directly from the source.",
+        "stats": {
+            "status": "STATUS:",
+            "statusValue": "RAG_ACTIVE",
+            "dataSource": "DATA_SOURCE:",
+            "dataSourceValue": "MARMARA_UNI",
+            "mode": "MODE:",
+            "modeValue": "RETRIEVAL_AUGMENTED",
+            "protocol": "PROTOCOL:",
+            "protocolValue": "Q&A_RETRIEVAL"
+        }
+    },
+    "builders": {
+        "title": "Built by Students",
+        "profiles": {
+            "hakki": {
+                "name": "Hakkı",
+                "role": "Project Lead",
+                "badge": "Maintainer"
+            },
+            "kayra": {
+                "name": "Kayra",
+                "role": "AI Researcher",
+                "badge": "Contributor"
+            }
+        },
+        "joinUs": {
+            "title": "You",
+            "badge": "Join Us",
+            "description": "Without you, we are one person short. Join us and contribute to Marmara's open-source future."
+        }
+    },
+    "footer": {
+        "backToTop": "Back to top",
+        "tagline": "Built by students, for students.",
+        "copyright": "© 2024 MarunGPT. All rights reserved.",
+        "legal": {
+            "title": "Legal",
+            "terms": "Terms",
+            "privacy": "Privacy",
+            "cookies": "Cookies"
+        },
+        "social": {
+            "title": "Follow us"
+        },
+        "language": {
+            "title": "Language",
+            "english": "English",
+            "turkish": "Türkçe"
+        }
+    },
+    "architecture": {
+        "hero": {
+            "badge": "// SYSTEM_ARCHITECTURE :: VERSION_2.0",
+            "title": "System Architecture",
+            "titleHighlight": "Architecture",
+            "description": "A comprehensive overview of MarunGPT's technical infrastructure, component architecture, and system design principles."
+        },
+        "overview": {
+            "title": "Architecture Overview",
+            "description": "MarunGPT is built on a modular, scalable architecture designed to handle complex academic queries with high accuracy and performance. The system leverages modern RAG (Retrieval-Augmented Generation) techniques to provide contextually relevant responses from Marmara University's extensive data resources.",
+            "layers": {
+                "frontend": "LAYER_1 :: FRONTEND",
+                "apiGateway": "LAYER_2 :: API_GATEWAY",
+                "processing": "LAYER_3 :: PROCESSING",
+                "dataLayer": "DATA_LAYER :: STORAGE"
+            }
+        },
+        "components": {
+            "title": "Core Components",
+            "description": "Each component is designed with scalability, reliability, and performance in mind. The modular architecture allows for independent updates and optimizations.",
+            "items": {
+                "dataLayer": {
+                    "title": "Data Layer",
+                    "description": "Centralized storage and retrieval system for university data resources. Handles document indexing, vector embeddings, and semantic search capabilities.",
+                    "status": "ACTIVE"
+                },
+                "processingEngine": {
+                    "title": "Processing Engine",
+                    "description": "Advanced NLP processing unit that handles query understanding, context extraction, and response generation with high accuracy.",
+                    "status": "OPTIMIZED"
+                },
+                "apiGateway": {
+                    "title": "API Gateway",
+                    "description": "RESTful interface layer that manages request routing, authentication, and rate limiting for secure access to the system.",
+                    "status": "STABLE"
+                },
+                "securityLayer": {
+                    "title": "Security Layer",
+                    "description": "Multi-layered security framework ensuring data privacy, access control, and compliance with academic data protection standards.",
+                    "status": "ENFORCED"
+                },
+                "cacheSystem": {
+                    "title": "Cache System",
+                    "description": "High-performance caching mechanism that reduces latency and improves response times for frequently accessed queries.",
+                    "status": "ACTIVE"
+                },
+                "integrationLayer": {
+                    "title": "Integration Layer",
+                    "description": "Seamless integration with university systems, databases, and external APIs to provide comprehensive data access.",
+                    "status": "CONNECTED"
+                }
+            }
+        },
+        "specs": {
+            "title": "Technical Specifications",
+            "description": "Detailed technical specifications and performance metrics of the MarunGPT architecture.",
+            "items": {
+                "architecture": "ARCHITECTURE",
+                "architectureValue": "MODULAR_RAG",
+                "processing": "PROCESSING",
+                "processingValue": "ASYNC_PARALLEL",
+                "storage": "STORAGE",
+                "storageValue": "VECTOR_DATABASE",
+                "apiProtocol": "API_PROTOCOL",
+                "apiProtocolValue": "REST_JSON",
+                "security": "SECURITY",
+                "securityValue": "TLS_1.3",
+                "uptime": "UPTIME",
+                "uptimeValue": "99.9%"
+            }
+        }
+    },
+    "docs": {
+        "hero": {
+            "badge": "// DOCUMENTATION :: VERSION_1.0",
+            "title": "Documentation",
+            "description": "Complete guide to using MarunGPT. Learn how to integrate, configure, and leverage our RAG system for academic queries and data retrieval."
+        },
+        "quickStart": {
+            "title": "Quick Start",
+            "description": "Get up and running with MarunGPT in minutes. Follow these simple steps to start querying university data and getting intelligent responses.",
+            "steps": {
+                "createAccount": {
+                    "step": "01",
+                    "title": "Create Account",
+                    "description": "Sign up with your Marmara University email address to get started with MarunGPT."
+                },
+                "getApiKey": {
+                    "step": "02",
+                    "title": "Get API Key",
+                    "description": "Generate your API key from the dashboard to authenticate your requests."
+                },
+                "makeFirstQuery": {
+                    "step": "03",
+                    "title": "Make First Query",
+                    "description": "Start asking questions about courses, regulations, or any university-related information."
+                },
+                "integrate": {
+                    "step": "04",
+                    "title": "Integrate",
+                    "description": "Use our API or web interface to integrate MarunGPT into your applications."
+                }
+            }
+        },
+        "sections": {
+            "title": "Documentation Sections",
+            "description": "Explore our comprehensive documentation covering all aspects of MarunGPT, from basic usage to advanced integration.",
+            "readMore": "Read more",
+            "items": {
+                "gettingStarted": {
+                    "title": "Getting Started",
+                    "description": "Quick start guide to begin using MarunGPT. Learn how to set up your account, make your first query, and understand the basic features.",
+                    "link": "#getting-started"
+                },
+                "apiReference": {
+                    "title": "API Reference",
+                    "description": "Complete API documentation with endpoints, request/response formats, authentication, and code examples in multiple programming languages.",
+                    "link": "#api-reference"
+                },
+                "usageExamples": {
+                    "title": "Usage Examples",
+                    "description": "Practical examples and use cases showing how to interact with MarunGPT for common academic queries and scenarios.",
+                    "link": "#usage-examples"
+                },
+                "configuration": {
+                    "title": "Configuration",
+                    "description": "Detailed configuration options, customization settings, and preferences to tailor MarunGPT to your specific needs.",
+                    "link": "#configuration"
+                },
+                "authentication": {
+                    "title": "Authentication",
+                    "description": "Security and authentication guide covering API keys, access tokens, rate limits, and best practices for secure integration.",
+                    "link": "#authentication"
+                },
+                "faq": {
+                    "title": "FAQ",
+                    "description": "Frequently asked questions covering common issues, troubleshooting tips, and answers to the most common user inquiries.",
+                    "link": "#faq"
+                }
+            }
+        },
+        "apiExample": {
+            "title": "API Example",
+            "description": "Here's a simple example of how to interact with the MarunGPT API. Make authenticated requests to query university data and receive intelligent responses.",
+            "response": "RESPONSE:"
+        },
+        "features": {
+            "title": "Key Features",
+            "description": "MarunGPT provides powerful features for querying and retrieving academic information with high accuracy and speed.",
+            "items": {
+                "restfulApi": {
+                    "title": "RESTful API",
+                    "description": "Simple HTTP-based API with JSON responses for easy integration."
+                },
+                "realTimeUpdates": {
+                    "title": "Real-time Updates",
+                    "description": "Always up-to-date information synchronized from university systems."
+                },
+                "multiLanguage": {
+                    "title": "Multi-language Support",
+                    "description": "Query in Turkish or English, receive responses in your preferred language."
+                },
+                "sourceAttribution": {
+                    "title": "Source Attribution",
+                    "description": "Every response includes references to the original data sources."
+                },
+                "rateLimiting": {
+                    "title": "Rate Limiting",
+                    "description": "Fair usage policies with generous rate limits for all users."
+                },
+                "errorHandling": {
+                    "title": "Error Handling",
+                    "description": "Comprehensive error codes and messages for easy debugging."
+                }
+            }
+        }
+    },
+    "schoolData": {
+        "hero": {
+            "badge": "// DATA_REPOSITORY :: MARMARA_UNIVERSITY_V1",
+            "title": "School Data",
+            "titleHighlight": "Data",
+            "description": "Comprehensive access to Marmara University's academic data, course information, regulations, and resources. All data is indexed, searchable, and continuously updated."
+        },
+        "overview": {
+            "title": "Data Overview",
+            "description": "MarunGPT integrates data from multiple university systems to provide comprehensive, up-to-date information. Our data repository includes course catalogs, academic regulations, faculty information, and student resources, all optimized for intelligent retrieval and context-aware responses.",
+            "metrics": {
+                "totalDocuments": {
+                    "label": "Total Documents",
+                    "value": "15,000+",
+                    "description": "Indexed and searchable documents"
+                },
+                "dataSources": {
+                    "label": "Data Sources",
+                    "value": "25+",
+                    "description": "Integrated university systems"
+                },
+                "updateFrequency": {
+                    "label": "Update Frequency",
+                    "value": "Real-time",
+                    "description": "Continuous synchronization"
+                },
+                "coverage": {
+                    "label": "Coverage",
+                    "value": "100%",
+                    "description": "All faculties and departments"
+                }
+            }
+        },
+        "categories": {
+            "title": "Data Categories",
+            "description": "Our data repository is organized into comprehensive categories, each containing detailed information relevant to students, faculty, and administrative needs.",
+            "items": {
+                "courseCatalogs": {
+                    "title": "Course Catalogs",
+                    "description": "Comprehensive course information including prerequisites, descriptions, schedules, and credit hours for all academic programs.",
+                    "count": "2,500+"
+                },
+                "academicRegulations": {
+                    "title": "Academic Regulations",
+                    "description": "University policies, academic rules, grading systems, and administrative procedures documented and indexed for quick retrieval.",
+                    "count": "500+"
+                },
+                "academicCalendar": {
+                    "title": "Academic Calendar",
+                    "description": "Semester schedules, exam dates, registration periods, holidays, and important academic deadlines across all faculties.",
+                    "count": "Updated Daily"
+                },
+                "facultyInfo": {
+                    "title": "Faculty Information",
+                    "description": "Department details, faculty members, research areas, office hours, and contact information for academic staff.",
+                    "count": "1,200+"
+                },
+                "studentResources": {
+                    "title": "Student Resources",
+                    "description": "Study guides, tutoring services, library resources, campus facilities, and student support services information.",
+                    "count": "800+"
+                },
+                "researchData": {
+                    "title": "Research Data",
+                    "description": "Research publications, thesis archives, project databases, and academic research resources from various departments.",
+                    "count": "10,000+"
+                }
+            }
+        },
+        "management": {
+            "title": "Data Management",
+            "description": "Our data management system ensures accuracy, currency, and comprehensive coverage of all university information. Data is continuously synchronized, indexed, and optimized for fast retrieval.",
+            "specs": {
+                "syncFrequency": "SYNC_FREQUENCY",
+                "syncFrequencyValue": "REAL_TIME",
+                "indexing": "INDEXING",
+                "indexingValue": "VECTOR_EMBEDDED",
+                "storage": "STORAGE",
+                "storageValue": "DISTRIBUTED_DB",
+                "backup": "BACKUP",
+                "backupValue": "DAILY_SNAPSHOT",
+                "validation": "VALIDATION",
+                "validationValue": "AUTO_VERIFIED",
+                "accuracy": "ACCURACY",
+                "accuracyValue": "99.8%"
+            }
+        },
+        "sources": {
+            "title": "Data Sources",
+            "description": "We integrate data from multiple official university systems and databases to ensure comprehensive coverage and accuracy.",
+            "items": {
+                "cms": "Course Management System",
+                "calendar": "Academic Calendar Database",
+                "faculty": "Faculty Directory",
+                "research": "Research Repository",
+                "regulations": "Regulation Database",
+                "resources": "Resource Management System"
+            }
+        }
+    },
+    "teams": {
+        "hero": {
+            "badge": "// TEAM_DIRECTORY :: MARMARA_UNIVERSITY",
+            "title": "Teams",
+            "description": "Meet the students behind MarunGPT. A passionate team of developers and researchers building the future of academic AI assistance."
+        },
+        "members": {
+            "title": "Team Members",
+            "description": "Our team consists of dedicated students from Marmara University, working together to build innovative solutions for academic challenges.",
+            "profiles": {
+                "hakki": {
+                    "name": "Hakkı",
+                    "role": "Project Lead",
+                    "badge": "Maintainer"
+                },
+                "kayra": {
+                    "name": "Kayra",
+                    "role": "AI Researcher",
+                    "badge": "Maintainer"
+                }
+            }
+        },
+        "about": {
+            "title": "About the Team",
+            "description": "MarunGPT is built by students, for students. We believe in the power of open-source collaboration and are committed to creating tools that make academic life easier and more accessible.",
+            "specs": {
+                "projectType": "PROJECT_TYPE",
+                "projectTypeValue": "OPEN_SOURCE",
+                "organization": "ORGANIZATION",
+                "organizationValue": "MARMARA_UNI",
+                "contributors": "CONTRIBUTORS",
+                "contributorsValue": "STUDENTS",
+                "license": "LICENSE",
+                "licenseValue": "MIT",
+                "status": "STATUS",
+                "statusValue": "ACTIVE",
+                "contributions": "CONTRIBUTIONS",
+                "contributionsValue": "WELCOME"
+            }
+        }
+    },
+    "manifesto": {
+        "badge": "Manifesto",
+        "title": "Built by students, for students, to lift Marmara together.",
+        "description": "We're a student team sharpening our skills while building MarunGPT to elevate Marmara University's reputation. We move fast, learn openly, and ship responsibly more details coming soon. Thanks for being early with us.",
+        "buttons": {
+            "roadmap": "Feature Roadmap",
+            "backHome": "Back Home"
+        }
+    },
+    "comingSoon": {
+        "badge": "Coming Soon",
+        "title": "We're putting the final touches on this experience.",
+        "description": "Thanks for your interest! The feature is almost ready. In the meantime, explore the docs or learn more about the platform.",
+        "buttons": {
+            "backHome": "Back Home"
+        }
+    },
+    "legal": {
+        "index": {
+            "title": "Legal Information",
+            "description": "Transparency and trust are important to us. Review our policies and legal documents below.",
+            "documents": {
+                "privacy": {
+                    "title": "Privacy Policy",
+                    "description": "Learn how we collect, use, and protect your personal information. Includes details about Google Analytics and Microsoft Clarity usage."
+                },
+                "terms": {
+                    "title": "Terms of Service",
+                    "description": "Read our terms and conditions for using MarunGPT's AI-powered educational platform."
+                },
+                "cookies": {
+                    "title": "Cookie Preferences",
+                    "description": "Manage your cookie preferences and learn about the tracking technologies we use on our website."
+                }
+            }
+        },
+        "backToHome": "Back to Home",
+        "backToLegal": "Back to Legal"
+    }
+}

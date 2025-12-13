@@ -1,10 +1,118 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Keyframes */
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes text-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@theme {
+  /* Animations */
+  --animate-first: moveVertical 30s ease infinite;
+  --animate-second: moveInCircle 20s reverse infinite;
+  --animate-third: moveInCircle 40s linear infinite;
+  --animate-fourth: moveHorizontal 40s ease infinite;
+  --animate-fifth: moveInCircle 20s ease infinite;
+  --animate-text-shimmer: text-shimmer 3s ease-in-out infinite;
+  
+  /* Mission Statement Colors */
+  --color-void-black: #050505;
+  --color-paper-white: #F3F4F6;
+  --color-aether-cyan: #40E0D0;
+  --color-volt-yellow: #CCFF00;
+  --color-deep-indigo: #4B0082;
+  --color-grid-gray: #404040;
+  --color-hyper-blue: #00D9FF;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-space-grotesk), sans-serif;
+  }
+  .font-body {
+    font-family: var(--font-inter), sans-serif;
+  }
+  .font-mono {
+    font-family: var(--font-jetbrains-mono), monospace;
+  }
+  .font-space-grotesk {
+    font-family: var(--font-space-grotesk), sans-serif;
+  }
+  
+  /* Brand Color Utilities */
+  .bg-brand-background { background-color: #F5F5F5; }
+  .bg-brand-surface { background-color: #FFFFFF; }
+  .bg-brand-primaryText { background-color: #0F172A; }
+  .bg-brand-accentPrimary { background-color: #00E5FF; }
+  .bg-brand-accentSecondary { background-color: #7C3AED; }
+  .bg-brand-utility { background-color: #E2E8F0; }
+  
+  .text-brand-background { color: #F5F5F5; }
+  .text-brand-surface { color: #FFFFFF; }
+  .text-brand-primaryText { color: #0F172A; }
+  .text-brand-accentPrimary { color: #00E5FF; }
+  .text-brand-accentSecondary { color: #7C3AED; }
+  .text-brand-utility { color: #E2E8F0; }
+  
+  .border-brand-background { border-color: #F5F5F5; }
+  .border-brand-surface { border-color: #FFFFFF; }
+  .border-brand-primaryText { border-color: #0F172A; }
+  .border-brand-accentPrimary { border-color: #00E5FF; }
+  .border-brand-accentSecondary { border-color: #7C3AED; }
+  .border-brand-utility { border-color: #E2E8F0; }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
+    /* MarunGPT Brand Colors */
+    --brand-background: #F5F5F5;
+    --brand-surface: #FFFFFF;
+    --brand-primary-text: #0F172A;
+    --brand-accent-primary: #00E5FF;
+    --brand-accent-secondary: #7C3AED;
+    --brand-utility: #E2E8F0;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
@@ -58,9 +166,16 @@
 }
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--brand-background);
+    color: hsl(var(--foreground));
+    font-family: var(--font-inter), sans-serif;
+    line-height: 1.625; /* leading-relaxed */
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 }

@@ -1,0 +1,460 @@
+{
+    "metadata": {
+        "title": "MarunGPT",
+        "description": "Marmara Üniversitesi için yapay zeka asistanınız MarunGPT ile tanışın. Kampüs hayatı zorluklarına cevaplar alın, fikirleri keşfedin ve akıllı çözümler bulun!"
+    },
+    "header": {
+        "brand": "MarunGPT",
+        "nav": {
+            "architecture": "Mimari",
+            "docs": "Dokümantasyon",
+            "schoolData": "Okul Verileri",
+            "teams": "Ekipler"
+        },
+        "launchBeta": "Beta'yı Başlat",
+        "toggleNavigation": "Menüyü aç/kapat"
+    },
+    "hero": {
+        "title": "Marmara Üniversitesi'nin\nÜretken Zeka Katmanı",
+        "description": "Akademik veriler için özelleştirilmiş bir RAG sistemi. Üniversite yönetmelikleri ve ders kataloglarından doğru, bağlama duyarlı yanıtlar alın.",
+        "metrics": {
+            "latency": "Latency: <200ms",
+            "dataFreshness": "Veri Tazeliği: Gerçek zamanlı",
+            "model": "Model: Fine-tuned"
+        },
+        "actions": {
+            "tryNow": "Şimdi dene",
+            "readManifesto": "Manifestoyu Oku"
+        }
+    },
+    "infrastructure": {
+        "title": "Sistem Özellikleri",
+        "cards": {
+            "nlp": {
+                "title": "Doğal Dil İşleme",
+                "description": "Türkçe ve İngilizce akademik bağlam için özelleştirilmiş gelişmiş NLP yetenekleri.",
+                "status": "Operasyonel"
+            },
+            "personalized": {
+                "title": "Kişiselleştirilmiş Öğrenme",
+                "description": "Uyarlanabilir öğrenme yolları. Müfredat yılınıza göre özelleştirilmiş öneriler sunuyoruz."
+            },
+            "availability": {
+                "title": "7/24 Erişilebilirlik",
+                "description": "Sınav hazırlığı ve idari sorular için kesintisiz yardım."
+            }
+        }
+    },
+    "mission": {
+        "systemLabel": "// SYSTEM_PHILOSOPHY :: CORE_MANIFESTO_V1",
+        "title": "Akıllı erişim.",
+        "titleHighlight": "MarunGPT, Marmara Üniversitesi verileri ile güçlendirilmiş bir RAG sistemidir.",
+        "description": "Marmara Üniversitesi'nin dijital kaynaklarından ilgili bilgileri alarak soruları yanıtlamak için tasarlanmış bir geri-çağırma güçlendirilmiş üretim uygulaması. Sorular sorun, kaynaktan doğrudan çıkarılan kesin yanıtlar alın.",
+        "stats": {
+            "status": "STATUS:",
+            "statusValue": "RAG_ACTIVE",
+            "dataSource": "DATA_SOURCE:",
+            "dataSourceValue": "MARMARA_UNI",
+            "mode": "MOD:",
+            "modeValue": "RETRIEVAL_AUGMENTED",
+            "protocol": "PROTOCOL:",
+            "protocolValue": "Q&A_RETRIEVAL"
+        }
+    },
+    "builders": {
+        "title": "Öğrenciler Tarafından İnşa Edildi",
+        "profiles": {
+            "hakki": {
+                "name": "Hakkı",
+                "role": "Project Lead",
+                "badge": "Maintainer"
+            },
+            "kayra": {
+                "name": "Kayra",
+                "role": "AI Researcher",
+                "badge": "Contributor"
+            }
+        },
+        "joinUs": {
+            "title": "Sen",
+            "badge": "Bize Katıl",
+            "description": "Sensiz bir kişi eksiğiz. Bize katıl ve Marmara'nın açık kaynak geleceğine katkıda bulun."
+        }
+    },
+    "footer": {
+        "backToTop": "Başa dön",
+        "tagline": "Öğrenciler tarafından, öğrenciler için inşa edildi.",
+        "copyright": "© 2024 MarunGPT. Tüm hakları saklıdır.",
+        "legal": {
+            "title": "Yasal",
+            "terms": "Şartlar",
+            "privacy": "Gizlilik",
+            "cookies": "Çerezler"
+        },
+        "social": {
+            "title": "Bizi takip edin"
+        },
+        "language": {
+            "title": "Dil",
+            "english": "English",
+            "turkish": "Türkçe"
+        }
+    },
+    "architecture": {
+        "hero": {
+            "badge": "// SYSTEM_ARCHITECTURE :: VERSION_2.0",
+            "title": "Sistem Mimarisi",
+            "titleHighlight": "Mimarisi",
+            "description": "MarunGPT'nin teknik altyapısı, bileşen mimarisi ve sistem tasarım ilkelerine kapsamlı bir genel bakış."
+        },
+        "overview": {
+            "title": "Mimari Genel Bakış",
+            "description": "MarunGPT, karmaşık akademik sorguları yüksek doğruluk ve performansla ele almak üzere tasarlanmış modüler, ölçeklenebilir bir mimari üzerine inşa edilmiştir. Sistem, Marmara Üniversitesi'nin kapsamlı veri kaynaklarından bağlamsal olarak ilgili yanıtlar sağlamak için modern RAG (Retrieval-Augmented Generation) tekniklerinden yararlanır.",
+            "layers": {
+                "frontend": "LAYER_1 :: FRONTEND",
+                "apiGateway": "LAYER_2 :: API_GATEWAY",
+                "processing": "LAYER_3 :: PROCESSING",
+                "dataLayer": "DATA_LAYER :: STORAGE"
+            }
+        },
+        "components": {
+            "title": "Çekirdek Bileşenler",
+            "description": "Her bileşen ölçeklenebilirlik, güvenilirlik ve performans göz önünde bulundurularak tasarlanmıştır. Modüler mimari, bağımsız güncellemelere ve optimizasyonlara olanak tanır.",
+            "items": {
+                "dataLayer": {
+                    "title": "Veri Katmanı",
+                    "description": "Üniversite veri kaynakları için merkezi depolama ve geri-çağırma sistemi. Belge indeksleme, vektör gömmeleri ve anlamsal arama yeteneklerini yönetir.",
+                    "status": "AKTİF"
+                },
+                "processingEngine": {
+                    "title": "İşleme Motoru",
+                    "description": "Sorgu anlama, bağlam çıkarımı ve yüksek doğrulukla yanıt üretimi işleyen gelişmiş NLP işleme birimi.",
+                    "status": "OPTİMİZE"
+                },
+                "apiGateway": {
+                    "title": "API Geçidi",
+                    "description": "İstek yönlendirme, kimlik doğrulama ve sisteme güvenli erişim için hız sınırlama yöneten RESTful arayüz katmanı.",
+                    "status": "STABİL"
+                },
+                "securityLayer": {
+                    "title": "Güvenlik Katmanı",
+                    "description": "Veri gizliliği, erişim kontrolü ve akademik veri koruma standartlarına uygunluğu sağlayan çok katmanlı güvenlik çerçevesi.",
+                    "status": "ZORUNLU"
+                },
+                "cacheSystem": {
+                    "title": "Önbellek Sistemi",
+                    "description": "Sık erişilen sorgular için gecikmeyi azaltan ve yanıt sürelerini iyileştiren yüksek performanslı önbellekleme mekanizması.",
+                    "status": "AKTİF"
+                },
+                "integrationLayer": {
+                    "title": "Entegrasyon Katmanı",
+                    "description": "Kapsamlı veri erişimi sağlamak için üniversite sistemleri, veritabanları ve harici API'lerle sorunsuz entegrasyon.",
+                    "status": "BAĞLI"
+                }
+            }
+        },
+        "specs": {
+            "title": "Teknik Özellikler",
+            "description": "MarunGPT mimarisinin detaylı teknik özellikleri ve performans metrikleri.",
+            "items": {
+                "architecture": "ARCHITECTURE",
+                "architectureValue": "MODULAR_RAG",
+                "processing": "PROCESSING",
+                "processingValue": "ASYNC_PARALLEL",
+                "storage": "STORAGE",
+                "storageValue": "VECTOR_DATABASE",
+                "apiProtocol": "API_PROTOCOL",
+                "apiProtocolValue": "REST_JSON",
+                "security": "SECURITY",
+                "securityValue": "TLS_1.3",
+                "uptime": "UPTIME",
+                "uptimeValue": "99.9%"
+            }
+        }
+    },
+    "docs": {
+        "hero": {
+            "badge": "// DOCUMENTATION :: VERSION_1.0",
+            "title": "Dokümantasyon",
+            "description": "MarunGPT'yi kullanmak için eksiksiz kılavuz. Akademik sorgular ve veri erişimi için RAG sistemimizi nasıl entegre edeceğinizi, yapılandıracağınızı ve kullanacağınızı öğrenin."
+        },
+        "quickStart": {
+            "title": "Hızlı Başlangıç",
+            "description": "MarunGPT ile dakikalar içinde başlayın. Üniversite verilerini sorgulamaya ve akıllı yanıtlar almaya başlamak için bu basit adımları izleyin.",
+            "steps": {
+                "createAccount": {
+                    "step": "01",
+                    "title": "Hesap Oluştur",
+                    "description": "MarunGPT'yi kullanmaya başlamak için Marmara Üniversitesi e-posta adresinizle kaydolun."
+                },
+                "getApiKey": {
+                    "step": "02",
+                    "title": "API Anahtarı Al",
+                    "description": "İsteklerinizi doğrulamak için kontrol panelinden API anahtarınızı oluşturun."
+                },
+                "makeFirstQuery": {
+                    "step": "03",
+                    "title": "İlk Sorguyu Yap",
+                    "description": "Dersler, yönetmelikler veya üniversiteyle ilgili herhangi bir bilgi hakkında sorular sormaya başlayın."
+                },
+                "integrate": {
+                    "step": "04",
+                    "title": "Entegre Et",
+                    "description": "MarunGPT'yi uygulamalarınıza entegre etmek için API'mizi veya web arayüzümüzü kullanın."
+                }
+            }
+        },
+        "sections": {
+            "title": "Dokümantasyon Bölümleri",
+            "description": "Temel kullanımdan gelişmiş entegrasyona kadar MarunGPT'nin tüm yönlerini kapsayan kapsamlı dokümantasyonumuzu keşfedin.",
+            "readMore": "Devamını oku",
+            "items": {
+                "gettingStarted": {
+                    "title": "Başlarken",
+                    "description": "MarunGPT'yi kullanmaya başlamak için hızlı başlangıç kılavuzu. Hesabınızı nasıl kuracağınızı, ilk sorgunuzu nasıl yapacağınızı ve temel özellikleri nasıl anlayacağınızı öğrenin.",
+                    "link": "#getting-started"
+                },
+                "apiReference": {
+                    "title": "API Referansı",
+                    "description": "Endpointler, request/response formatları, kimlik doğrulama ve birden fazla programlama dilinde kod örnekleri içeren eksiksiz API dokümantasyonu.",
+                    "link": "#api-reference"
+                },
+                "usageExamples": {
+                    "title": "Kullanım Örnekleri",
+                    "description": "Yaygın akademik sorgular ve senaryolar için MarunGPT ile nasıl etkileşime gireceğinizi gösteren pratik örnekler ve kullanım durumları.",
+                    "link": "#usage-examples"
+                },
+                "configuration": {
+                    "title": "Yapılandırma",
+                    "description": "MarunGPT'yi özel ihtiyaçlarınıza göre uyarlamak için ayrıntılı yapılandırma seçenekleri, özelleştirme ayarları ve tercihler.",
+                    "link": "#configuration"
+                },
+                "authentication": {
+                    "title": "Kimlik Doğrulama",
+                    "description": "API anahtarlarını, access tokenlerı, ratelimit ve güvenli entegrasyon için en iyi uygulamaları kapsayan güvenlik ve kimlik doğrulama kılavuzu.",
+                    "link": "#authentication"
+                },
+                "faq": {
+                    "title": "SSS",
+                    "description": "Yaygın sorunları, sorun giderme ipuçlarını ve en yaygın kullanıcı sorularına yanıtları kapsayan sıkça sorulan sorular.",
+                    "link": "#faq"
+                }
+            }
+        },
+        "apiExample": {
+            "title": "API Örneği",
+            "description": "MarunGPT API'si ile nasıl etkileşime gireceğinize dair basit bir örnek. Üniversite verilerini sorgulamak ve akıllı yanıtlar almak için kimliği doğrulanmış istekler yapın.",
+            "response": "YANIT:"
+        },
+        "features": {
+            "title": "Önemli Özellikler",
+            "description": "MarunGPT, yüksek doğruluk ve hızla akademik bilgileri sorgulamak ve almak için güçlü özellikler sağlar.",
+            "items": {
+                "restfulApi": {
+                    "title": "RESTful API",
+                    "description": "Kolay entegrasyon için JSON yanıtları ile basit HTTP tabanlı API."
+                },
+                "realTimeUpdates": {
+                    "title": "Gerçek Zamanlı Güncellemeler",
+                    "description": "Üniversite sistemlerinden senkronize edilen her zaman güncel bilgiler."
+                },
+                "multiLanguage": {
+                    "title": "Çoklu Dil Desteği",
+                    "description": "Türkçe veya İngilizce sorgu yapın, tercih ettiğiniz dilde yanıtlar alın."
+                },
+                "sourceAttribution": {
+                    "title": "Kaynak Atıfı",
+                    "description": "Her yanıt, orijinal veri kaynaklarına referanslar içerir."
+                },
+                "rateLimiting": {
+                    "title": "Hız Sınırlama",
+                    "description": "Tüm kullanıcılar için cömert hız limitleri ile adil kullanım politikaları."
+                },
+                "errorHandling": {
+                    "title": "Hata İşleme",
+                    "description": "Kolay hata ayıklama için kapsamlı hata kodları ve mesajları."
+                }
+            }
+        }
+    },
+    "schoolData": {
+        "hero": {
+            "badge": "// DATA_REPOSITORY :: MARMARA_UNIVERSITY_V1",
+            "title": "Okul Verileri",
+            "titleHighlight": "Verileri",
+            "description": "Marmara Üniversitesi'nin akademik verilerine, ders bilgilerine, yönetmeliklere ve kaynaklara kapsamlı erişim. Tüm veriler indekslenmiş, aranabilir ve sürekli güncellenmektedir."
+        },
+        "overview": {
+            "title": "Veri Genel Bakış",
+            "description": "MarunGPT, kapsamlı ve güncel bilgiler sağlamak için birden fazla üniversite sisteminden veri entegre eder. Veri havuzumuz, akıllı erişim ve bağlama duyarlı yanıtlar için optimize edilmiş ders kataloglarını, akademik yönetmelikleri, fakülte bilgilerini ve öğrenci kaynaklarını içerir.",
+            "metrics": {
+                "totalDocuments": {
+                    "label": "Toplam Doküman",
+                    "value": "15,000+",
+                    "description": "İndekslenmiş ve aranabilir dokümanlar"
+                },
+                "dataSources": {
+                    "label": "Veri Kaynakları",
+                    "value": "25+",
+                    "description": "Entegre üniversite sistemleri"
+                },
+                "updateFrequency": {
+                    "label": "Güncelleme Sıklığı",
+                    "value": "Gerçek zamanlı",
+                    "description": "Sürekli senkronizasyon"
+                },
+                "coverage": {
+                    "label": "Kapsam",
+                    "value": "100%",
+                    "description": "Tüm fakülteler ve bölümler"
+                }
+            }
+        },
+        "categories": {
+            "title": "Veri Kategorileri",
+            "description": "Veri havuzumuz, her biri öğrenciler, öğretim üyeleri ve idari ihtiyaçlarla ilgili ayrıntılı bilgiler içeren kapsamlı kategorilere ayrılmıştır.",
+            "items": {
+                "courseCatalogs": {
+                    "title": "Ders Katalogları",
+                    "description": "Tüm akademik programlar için ön koşullar, açıklamalar, programlar ve kredi saatleri dahil kapsamlı ders bilgileri.",
+                    "count": "2,500+"
+                },
+                "academicRegulations": {
+                    "title": "Akademik Yönetmelikler",
+                    "description": "Hızlı erişim için belgelenmiş ve indekslenmiş üniversite politikaları, akademik kurallar, not sistemleri ve idari prosedürler.",
+                    "count": "500+"
+                },
+                "academicCalendar": {
+                    "title": "Akademik Takvim",
+                    "description": "Tüm fakültelerde dönem programları, sınav tarihleri, kayıt dönemleri, tatiller ve önemli akademik son tarihler.",
+                    "count": "Günlük Güncellenir"
+                },
+                "facultyInfo": {
+                    "title": "Fakülte Bilgileri",
+                    "description": "Bölüm detayları, öğretim üyeleri, araştırma alanları, ofis saatleri ve akademik personel için iletişim bilgileri.",
+                    "count": "1,200+"
+                },
+                "studentResources": {
+                    "title": "Öğrenci Kaynakları",
+                    "description": "Çalışma rehberleri, ders desteği hizmetleri, kütüphane kaynakları, kampüs tesisleri ve öğrenci destek hizmetleri bilgileri.",
+                    "count": "800+"
+                },
+                "researchData": {
+                    "title": "Araştırma Verileri",
+                    "description": "Çeşitli bölümlerden araştırma yayınları, tez arşivleri, proje veritabanları ve akademik araştırma kaynakları.",
+                    "count": "10,000+"
+                }
+            }
+        },
+        "management": {
+            "title": "Veri Yönetimi",
+            "description": "Veri yönetim sistemimiz, tüm üniversite bilgilerinin doğruluğunu, güncelliğini ve kapsamlı kapsamını sağlar. Veriler sürekli olarak senkronize edilir, indekslenir ve hızlı erişim için optimize edilir.",
+            "specs": {
+                "syncFrequency": "SYNC_FREQUENCY",
+                "syncFrequencyValue": "REAL_TIME",
+                "indexing": "INDEXING",
+                "indexingValue": "VECTOR_EMBEDDED",
+                "storage": "STORAGE",
+                "storageValue": "DISTRIBUTED_DB",
+                "backup": "BACKUP",
+                "backupValue": "DAILY_SNAPSHOT",
+                "validation": "VALIDATION",
+                "validationValue": "AUTO_VERIFIED",
+                "accuracy": "ACCURACY",
+                "accuracyValue": "99.8%"
+            }
+        },
+        "sources": {
+            "title": "Veri Kaynakları",
+            "description": "Kapsamlı kapsam ve doğruluğu sağlamak için birden fazla resmi üniversite sistemi ve veritabanından veri entegre ediyoruz.",
+            "items": {
+                "cms": "Ders Yönetim Sistemi",
+                "calendar": "Akademik Takvim Veritabanı",
+                "faculty": "Fakülte Rehberi",
+                "research": "Araştırma Deposu",
+                "regulations": "Yönetmelik Veritabanı",
+                "resources": "Kaynak Yönetim Sistemi"
+            }
+        }
+    },
+    "teams": {
+        "hero": {
+            "badge": "// TEAM_DIRECTORY :: MARMARA_UNIVERSITY",
+            "title": "Ekipler",
+            "description": "MarunGPT'nin arkasındaki öğrencilerle tanışın. Akademik yapay zeka yardımının geleceğini inşa eden tutkulu bir geliştirici ve araştırmacı ekibi."
+        },
+        "members": {
+            "title": "Ekip Üyeleri",
+            "description": "Ekibimiz, akademik zorluklar için yenilikçi çözümler oluşturmak üzere birlikte çalışan Marmara Üniversitesi öğrencilerinden oluşmaktadır.",
+            "profiles": {
+                "hakki": {
+                    "name": "Hakkı",
+                    "role": "Proje Lideri",
+                    "badge": "Sorumlu"
+                },
+                "kayra": {
+                    "name": "Kayra",
+                    "role": "Yapay Zeka Araştırmacısı",
+                    "badge": "Sorumlu"
+                }
+            }
+        },
+        "about": {
+            "title": "Ekip Hakkında",
+            "description": "MarunGPT öğrenciler tarafından, öğrenciler için inşa edilmiştir. Açık kaynak işbirliğinin gücüne inanıyor ve akademik hayatı daha kolay ve erişilebilir hale getiren araçlar oluşturmaya kararlıyız.",
+            "specs": {
+                "projectType": "PROJECT_TYPE",
+                "projectTypeValue": "OPEN_SOURCE",
+                "organization": "ORGANIZATION",
+                "organizationValue": "MARMARA_UNI",
+                "contributors": "CONTRIBUTORS",
+                "contributorsValue": "STUDENTS",
+                "license": "LICENSE",
+                "licenseValue": "MIT",
+                "status": "STATUS",
+                "statusValue": "ACTIVE",
+                "contributions": "CONTRIBUTIONS",
+                "contributionsValue": "WELCOME"
+            }
+        }
+    },
+    "manifesto": {
+        "badge": "Manifesto",
+        "title": "Öğrenciler tarafından, öğrenciler için, Marmara'yı birlikte yükseltmek için inşa edildi.",
+        "description": "Marmara Üniversitesi'nin itibarını yükseltmek için MarunGPT'yi geliştirirken becerilerimizi geliştiren bir öğrenci ekibiyiz. Hızlı hareket ediyor, açıkça öğreniyor ve sorumlu bir şekilde teslim ediyoruz - daha fazla ayrıntı yakında. Bizimle erken olduğunuz için teşekkürler.",
+        "buttons": {
+            "roadmap": "Özellik Yol Haritası",
+            "backHome": "Ana Sayfaya Dön"
+        }
+    },
+    "comingSoon": {
+        "badge": "Yakında Geliyor",
+        "title": "Bu deneyime son rötuşları yapıyoruz.",
+        "description": "İlginiz için teşekkürler! Özellik neredeyse hazır. Bu arada, dokümanları keşfedin veya platform hakkında daha fazla bilgi edinin.",
+        "buttons": {
+            "backHome": "Ana Sayfaya Dön"
+        }
+    },
+    "legal": {
+        "index": {
+            "title": "Yasal Bilgiler",
+            "description": "Şeffaflık ve güven bizim için önemlidir. Aşağıdaki politikalarımızı ve yasal belgelerimizi inceleyin.",
+            "documents": {
+                "privacy": {
+                    "title": "Gizlilik Politikası",
+                    "description": "Kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin. Google Analytics ve Microsoft Clarity kullanımıyla ilgili ayrıntıları içerir."
+                },
+                "terms": {
+                    "title": "Hizmet Şartları",
+                    "description": "MarunGPT'nin yapay zeka destekli eğitim platformunu kullanmak için şart ve koşullarımızı okuyun."
+                },
+                "cookies": {
+                    "title": "Çerez Tercihleri",
+                    "description": "Çerez tercihlerinizi yönetin ve web sitemizde kullandığımız izleme teknolojileri hakkında bilgi edinin."
+                }
+            }
+        },
+        "backToHome": "Ana Sayfaya Dön",
+        "backToLegal": "Yasal Sayfaya Dön"
+    }
+}
