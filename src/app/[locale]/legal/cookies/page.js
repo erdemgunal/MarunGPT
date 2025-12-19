@@ -19,7 +19,7 @@ export default async function CookiesPage({ params }) {
     const t = await getTranslations('legal');
 
     return (
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="max-w-5xl ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-20 px-4 sm:px-6 lg:px-8 pb-20">
             <div className="mb-8">
                 <Link
                     href="/legal"

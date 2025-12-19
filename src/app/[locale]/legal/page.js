@@ -34,7 +34,7 @@ export default async function LegalPage() {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16">
+        <div className="max-w-5xl ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-20 px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16">
             <div className="mb-12 sm:mb-16">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
                     {t('title')}

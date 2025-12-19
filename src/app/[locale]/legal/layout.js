@@ -22,7 +22,7 @@ export default async function LegalLayout({ children }) {
     return (
         <>
             <div className="min-h-screen bg-brand-background text-brand-primaryText">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12">
+                <div className="max-w-5xl ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-20 px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12">
                     <Link
                         href="/"
                         className="inline-flex items-center gap-2 text-aether-cyan hover:text-aether-cyan/80 transition-colors mb-6 text-sm sm:text-base tracking-wide"
@@ -47,8 +47,6 @@ export default async function LegalLayout({ children }) {
                 </div>
                 {children}
             </div>
-
-            <Footer />
         </>
     );
 }
